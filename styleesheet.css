@@ -1,0 +1,513 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Arial Black', (sans-serif);
+    list-style: none;
+}
+
+body {
+    background: url('background1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    font-size: 27px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: skyblue;
+    font-weight: 1200;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: rgb(228, 18, 25);
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    color: #000;
+    font-weight: 700
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    color: #000;
+}
+
+.home-content p {
+    font-size: 30px;
+    color: black;
+    font-weight: 100;
+}
+
+.p1 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.p1 a:hover {
+    background: aqua;
+    color: #081b29;
+    box-shadow: 0 0 10px aqua;
+
+}
+
+.btn_box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: aqua;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn_box:hover {
+
+    box-shadow: 0 0 5px cyan,
+        0 0 10px cyan, 0 0 15px cyan,
+        0 0 40px cyan, 0 0 70px cyan
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px 5%;
+    }
+
+    .home {
+        padding: 50px 5% 0;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin: 8px 0;
+    }
+
+    .home-content h3 {
+        font-size: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+    .p1 a {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+        margin: 15px 10px 15px 0;
+    }
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.about-image img {
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-text h2 {
+    font-size: 60px;
+    color: darkred;
+}
+
+.about-text h2 span {
+    color: #0ef;
+}
+
+.about-text h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p {
+    color: #e3d2d2;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .about-text h2 {
+        font-size: 32px;
+    }
+
+    .about-text h4 {
+        font-size: 16px;
+        margin: 15px 0 15px; 
+    }
+
+    .about-text p {
+        font-size: 14px;
+        margin-bottom: 1.5rem; 
+    }
+}
+
+#Services {
+    color: rgb(14, 15, 16);
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.Container {
+    padding: 90px;
+}
+
+.ul1 {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.ul1 span {
+    color: #0ef;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 14px;
+    font-weight: 14px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+        1px 1px 40px #0053b8f7
+}
+
+.list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #d0bdf4;
+}
+
+.list div a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.read {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: aqua;
+    border-radius: 40px;
+    font-size: 17px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+}
+
+.list div p {
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.read :hover {
+    box-shadow: 0 0 5px cyan,
+        0 0 15px cyan, 0 0 20px cyan,
+        0 0 70px cyan, 0 0 70px cyan;
+}
+
+.header1 {
+    text-align: center;
+}
+
+#skills-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: darkred;
+    font-size: 30px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: black;
+    color: aqua;
+}
+
+li {
+    margin-bottom: 10px;
+    color: chocolate;
+    background-color: black;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+    padding-left: 30px;
+    margin-top: 130px;
+}
+
+.contact_text h2 {
+    font-size: 65px;
+    line-height: 1;
+    text-align: center;
+    padding-bottom: 50px;
+
+}
+
+.contact_text h2 {
+    text-align: center;
+}
+
+.contact_text h2 span {
+    color: rgb(59, 59, 151);
+}
+
+.contact_info {
+    margin-bottom: 3rem;
+}
+
+.contact_info li {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact_info li {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact_info i {
+    display: inline-block;
+    color: rgb(5, 214, 247);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+
+.contact_info li a:hover {
+    transform: scale(1.01) translateY(-5px);
+    color: #0ef;
+}
+
+.intro {
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+    padding: 40px;
+
+}
+
+.abcd {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.contact_media i {
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    font-size: 22px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+}
+
+.contact_media i {
+    background: aqua;
+    color: #000;
+    box-shadow: 0 0 10px rgb(193, 158, 197);
+}
+
+.contact_form {
+    position: relative;
+}
+
+.contact_form form input,
+form textarea {
+    border: none;
+    outline: none;
+    padding: 18px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    border-radius: 0.3rem;
+}
+
+.contact_form form textarea {
+    resize: none;
+    height: 300px;
+}
+
+.contact_form form .send {
+    display: inline-block;
+    padding: 14px 60px;
+    background-color: aqua;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px #0ef,
+        0 0 25px #0ef;
+}
+
+.contact_form form .send:hover {
+    box-shadow: 0 0 5px cyan,
+        0 0 10px cyan, 0 0 10px cyan,
+        0 0 30px cyan, 0 0 10px cyan;
+}
+@media only screen and (max-width: 767px) {
+    .contact {
+        grid-template-columns: 1fr; 
+        padding: 20px;
+        margin-top: 80px;
+    }
+
+    .contact_text h2 {
+        font-size: 40px;
+        line-height: 1.2;
+        padding-bottom: 30px;
+    }
+
+    .contact_text h2 span {
+        display: block;
+        color: rgb(59, 59, 151);
+    }
+
+    .contact_info {
+        margin-bottom: 2rem;
+    }
+
+    .contact_info li {
+        margin-bottom: 8px;
+    }
+
+    .contact_info i {
+        font-size: 18px;
+    }
+
+    .intro {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .abcd {
+        font-size: 25px;
+    }
+
+    .contact_media i {
+        width: 30px;
+        height: 30px;
+        margin: 15px 10px 15px 0;
+    }
+}
+.error {
+    color: red;
+  }
+  .lasttext{
+        font-size: 40px;
+        color: aqua;
+  }
